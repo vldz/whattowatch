@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+    <!--дескриптор веб приложения, хранит конфиг инфу о приложении для томКэта-->
+
+    <!--стартовая страница-->
+    <!--<welcome-file-list>-->
+        <!--<welcome-file>index.html</welcome-file>-->
+    <!--</welcome-file-list>-->
+
+    <!--объявляет сервлет(создаем объект класса ДемоСервлет)-->
+    <servlet>
+        <servlet-name>demoServlet</servlet-name>
+        <servlet-class>com.vanillastorm.web.DemoServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet>
+        <servlet-name>muCustomServlet</servlet-name>
+        <servlet-class>com.vanillastorm.web.DemoServlet</servlet-class>
+    </servlet>
+
+    <!--привязывает юрл к конкретному сервлету под именем демоСервлет-->
+    <servlet-mapping>
+        <servlet-name>demoServlet</servlet-name>
+        <url-pattern>/Demo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>demoServlet</servlet-name>
+        <url-pattern>/Demo2</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>muCustomServlet</servlet-name>
+        <url-pattern>/customServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>

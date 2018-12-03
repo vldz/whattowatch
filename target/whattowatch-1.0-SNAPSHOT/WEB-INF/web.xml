@@ -24,6 +24,11 @@
         <servlet-class>com.vanillastorm.web.DemoServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>com.vanillastorm.web.HomeServlet</servlet-class>
+    </servlet>
+
     <!--привязывает юрл к конкретному сервлету под именем демоСервлет-->
     <servlet-mapping>
         <servlet-name>demoServlet</servlet-name>
@@ -39,5 +44,21 @@
         <servlet-name>muCustomServlet</servlet-name>
         <url-pattern>/customServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+
+    <!--объявляет фильтер, создает объект класса, сесюрити фильтер-->
+    <!--<filter>-->
+        <!--<filter-name>SecurityFilter</filter-name>-->
+        <!--<filter-class>com.vanillastorm.web.SecurityFilter</filter-class>-->
+    <!--</filter>-->
+
+    <!--<filter-mapping>-->
+        <!--<filter-name>SecurityFilter</filter-name>-->
+        <!--<url-pattern>/home</url-pattern>-->
+    <!--</filter-mapping>-->
 
 </web-app>

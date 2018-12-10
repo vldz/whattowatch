@@ -22,5 +22,6 @@
     <!--<bean id="movieService" class="com.vanillastorm.service.SimpleMovieService" init-method="postCreate">-->
         <!--<property ref="movieRepository" name="movieRepository" /> &lt;!&ndash;проперти == сеттер&ndash;&gt;-->
     <!--</bean>-->
+
 </beans>
 

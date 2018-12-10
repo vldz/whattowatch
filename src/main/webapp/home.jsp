@@ -14,11 +14,7 @@
 </head>
 <body>
     <h1>hello from home page to me</h1>
-    <%= request.getParameter("myParam") %>
-    <%= request.getAttribute("myAtr") %>
-
-    <h1>my param from session: </h1>
-    <%= session.getAttribute("myParam") %>
+    <h2>${model['Greeting message']}</h2>
 
     <c:out value="wassup"/>
 

@@ -5,6 +5,18 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
                              http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
 
+
+    <servlet>
+        <servlet-name>GeneralServlet</servlet-name>
+        <servlet-class>com.vanillastorm.web.GeneralRequestDispatcherServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GeneralServlet</servlet-name>
+        <url-pattern>/app/*</url-pattern>
+    </servlet-mapping>
+
+
     <!--дескриптор веб приложения, хранит конфиг инфу о приложении для томКэта-->
 
     <!--стартовая страница-->
@@ -13,42 +25,42 @@
     <!--</welcome-file-list>-->
 
     <!--объявляет сервлет(создаем объект класса ДемоСервлет)-->
-    <servlet>
-        <servlet-name>demoServlet</servlet-name>
-        <servlet-class>com.vanillastorm.web.DemoServlet</servlet-class>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
+    <!--<servlet>-->
+        <!--<servlet-name>demoServlet</servlet-name>-->
+        <!--<servlet-class>com.vanillastorm.web.DemoServlet</servlet-class>-->
+        <!--<load-on-startup>1</load-on-startup>-->
+    <!--</servlet>-->
 
-    <servlet>
-        <servlet-name>muCustomServlet</servlet-name>
-        <servlet-class>com.vanillastorm.web.DemoServlet</servlet-class>
-    </servlet>
+    <!--<servlet>-->
+        <!--<servlet-name>muCustomServlet</servlet-name>-->
+        <!--<servlet-class>com.vanillastorm.web.DemoServlet</servlet-class>-->
+    <!--</servlet>-->
 
-    <servlet>
-        <servlet-name>HomeServlet</servlet-name>
-        <servlet-class>com.vanillastorm.web.HomeServlet</servlet-class>
-    </servlet>
+    <!--<servlet>-->
+        <!--<servlet-name>HomeServlet</servlet-name>-->
+        <!--<servlet-class>com.vanillastorm.web.HomeServlet</servlet-class>-->
+    <!--</servlet>-->
 
-    <!--привязывает юрл к конкретному сервлету под именем демоСервлет-->
-    <servlet-mapping>
-        <servlet-name>demoServlet</servlet-name>
-        <url-pattern>/Demo</url-pattern>
-    </servlet-mapping>
+    <!--&lt;!&ndash;привязывает юрл к конкретному сервлету под именем демоСервлет&ndash;&gt;-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>demoServlet</servlet-name>-->
+        <!--<url-pattern>/Demo</url-pattern>-->
+    <!--</servlet-mapping>-->
 
-    <servlet-mapping>
-        <servlet-name>demoServlet</servlet-name>
-        <url-pattern>/Demo2</url-pattern>
-    </servlet-mapping>
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>demoServlet</servlet-name>-->
+        <!--<url-pattern>/Demo2</url-pattern>-->
+    <!--</servlet-mapping>-->
 
-    <servlet-mapping>
-        <servlet-name>muCustomServlet</servlet-name>
-        <url-pattern>/customServlet</url-pattern>
-    </servlet-mapping>
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>muCustomServlet</servlet-name>-->
+        <!--<url-pattern>/customServlet</url-pattern>-->
+    <!--</servlet-mapping>-->
 
-    <servlet-mapping>
-        <servlet-name>HomeServlet</servlet-name>
-        <url-pattern>/home</url-pattern>
-    </servlet-mapping>
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>HomeServlet</servlet-name>-->
+        <!--<url-pattern>/home</url-pattern>-->
+    <!--</servlet-mapping>-->
 
     <!--объявляет фильтер, создает объект класса, сесюрити фильтер-->
     <!--<filter>-->

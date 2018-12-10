@@ -13,22 +13,11 @@
     <title>Home page</title>
 </head>
 <body>
-    <h1>hello from home page to me</h1>
-    <h2>${model['Greeting message']}</h2>
-
-    <c:out value="wassup"/>
-
-    <c:if test="${myAtr eq 'my mode'}">
-        ${'im in if statement'}
-    </c:if>
-
-    ${'chto-to'}
-
+    <h3>general.jsp</h3>
     <ul>
-    <c:forEach items="${list}" var="s">
-        <li>${s}</li>
+    <c:forEach items="${model}" var="entry">
+        <li>Key = ${entry.key}, value = ${entry.value}</li>
     </c:forEach>
-
     </ul>
 </body>
 </html>

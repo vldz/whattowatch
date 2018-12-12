@@ -1,4 +1,4 @@
-package com.vanillastorm.util;
+package com.vanillastorm.util.custom;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

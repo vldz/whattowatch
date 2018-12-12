@@ -15,10 +15,26 @@
 <body>
     <h3>movie.jsp</h3>
     <ul>
-    <c:forEach items="${model}" var="entry">
-        <li>Key = ${entry.key}, value = ${entry.value}</li>
-    </c:forEach>
+        <li>Key = time, value = ${Time} </li>
+        <li>Key = requestUri, value = ${RequestUri} </li>
     </ul>
+    <h1 align="center">Movies:</h1>
+    <ul>
+        <c:forEach items="${movies}" var="movie">
+        <li>Id = ${movie.id}, name = ${movie.name}</li>
+        </c:forEach>
+    </ul>
+
+    <form action="/app/movie" method="post">
+        Id:<br>
+        <input type="text" name="id" value="7">
+        <br>
+        Name:<br>
+        <input type="text" name="name" value="Name of Movie">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
 </body>
 </html>
 

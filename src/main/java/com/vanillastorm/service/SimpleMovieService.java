@@ -2,12 +2,11 @@ package com.vanillastorm.service;
 
 import com.vanillastorm.entity.Movie;
 import com.vanillastorm.repository.MovieRepository;
-import com.vanillastorm.util.PostCreate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
+import java.util.List;
 
 @Service(value = "movieService") //присваеваем название  бина в контекст
 public class SimpleMovieService implements MovieService {
@@ -27,6 +26,16 @@ public class SimpleMovieService implements MovieService {
         } else {
             return false;
         }
+    }
+
+    @Override
+    public List<Movie> findAll() {
+        return movieRepository.findAll();
+    }
+
+    @Override
+    public void save(Movie movie) {
+        movieRepository.save(movie);
     }
 
     @PostConstruct

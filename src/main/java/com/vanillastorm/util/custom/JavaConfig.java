@@ -1,4 +1,4 @@
-package com.vanillastorm.util;
+package com.vanillastorm.util.custom;
 
 import com.vanillastorm.repository.InMemMovieRepository;
 import com.vanillastorm.service.SimpleMovieService;

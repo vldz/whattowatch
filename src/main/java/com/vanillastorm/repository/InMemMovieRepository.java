@@ -3,7 +3,9 @@ package com.vanillastorm.repository;
 import com.vanillastorm.entity.Movie;
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Repository
@@ -22,5 +24,15 @@ public class InMemMovieRepository implements MovieRepository {
     @Override
     public Movie find(long id) {
         return movies.get(id);
+    }
+
+    @Override
+    public List<Movie> findAll() {
+        return new ArrayList<>(movies.values());
+    }
+
+    @Override
+    public void save(Movie movie) {
+        movies.put(movie.getId(), movie);
     }
 }

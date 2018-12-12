@@ -33,8 +33,22 @@ public class GeneralRequestDispatcherServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        processRequest(request, response);
+    }
 
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        processRequest(req, resp);
+    }
+
+    private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("Inside General servlet" + request.getRequestURI());
+
+        for (Map.Entry<String, String[]> i : request.getParameterMap().entrySet()) {
+            System.out.println("Key " + i.getKey() + ". Value " + Arrays.toString(i.getValue()));
+        }
+
+        System.out.println(request.getMethod());
 
         Map<String, Object> model = new HashMap<>();
         model.put("RequestUri", request.getRequestURI());
@@ -43,12 +57,13 @@ public class GeneralRequestDispatcherServlet extends HttpServlet {
         BaseController controller = mappings.getOrDefault(request.getRequestURI(), errorController);
         String view = controller.process(request, model);
 
-        request.setAttribute("model", model);
+//        request.setAttribute("model", model);
+        for (Map.Entry<String, Object> entry : model.entrySet()) {
+            request.setAttribute(entry.getKey(), entry.getValue());
+        }
 
         RequestDispatcher rd = getServletContext().getRequestDispatcher("/" + view);
         //RequestDispatcher rd = getServletContext().getRequestDispatcher(/general.jsp);
         rd.forward(request, response);
-
     }
-
 }

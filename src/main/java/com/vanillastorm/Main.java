@@ -1,8 +1,7 @@
 package com.vanillastorm;
 
 import com.vanillastorm.service.MovieService;
-import com.vanillastorm.util.JavaApplicationContext;
-import com.vanillastorm.util.ServiceLocator;
+import com.vanillastorm.util.custom.JavaApplicationContext;
 
 import java.lang.reflect.InvocationTargetException;
 

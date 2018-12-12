@@ -1,4 +1,4 @@
-package com.vanillastorm.util;
+package com.vanillastorm.util.custom;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

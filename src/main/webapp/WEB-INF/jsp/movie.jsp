@@ -14,10 +14,10 @@
 </head>
 <body>
     <h3>movie.jsp</h3>
-    <ul>
-        <li>Key = time, value = ${Time} </li>
-        <li>Key = requestUri, value = ${RequestUri} </li>
-    </ul>
+    <c:if test="${movie != null}">
+    <h2 align="center">${movie.id}. ${movie.name}</h2>
+    </c:if>
+
     <h1 align="center">Movies:</h1>
     <ul>
         <c:forEach items="${movies}" var="movie">

@@ -27,8 +27,8 @@ public class GeneralRequestDispatcherServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
         super.init();
-        mappings.put("/app/movie", new MovieController());
-        mappings.put("/app", new HomeController());
+       // mappings.put("/app/movie", new MovieController());
+       // mappings.put("/app", new HomeController());
     }
 
     @Override

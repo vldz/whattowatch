@@ -1,13 +1,17 @@
 package com.vanillastorm.controllers;
 
-import javax.servlet.http.HttpServletRequest;
-import java.util.Map;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
-public class HomeController implements BaseController {
+@Controller
+public class HomeController {
 
-    @Override
-    public String process(HttpServletRequest request, Map<String, Object> model) {
-        model.put("Greeting message", "Hello, greeting message");
-        return "home.jsp";
+    //по запросу / и с методом GET попадает в метод home
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String home(Model model) {
+        model.addAttribute("greetingMessage", "Hello, greeting message");
+        return "home";
     }
 }

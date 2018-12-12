@@ -14,22 +14,9 @@
 </head>
 <body>
     <h1>hello from home page to me</h1>
-    <h2>${model['Greeting message']}</h2>
+    <h2>${greetingMessage}</h2>
 
-    <c:out value="wassup"/>
 
-    <c:if test="${myAtr eq 'my mode'}">
-        ${'im in if statement'}
-    </c:if>
-
-    ${'chto-to'}
-
-    <ul>
-    <c:forEach items="${list}" var="s">
-        <li>${s}</li>
-    </c:forEach>
-
-    </ul>
 </body>
 </html>
 

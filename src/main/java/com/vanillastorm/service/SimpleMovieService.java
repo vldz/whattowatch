@@ -56,6 +56,11 @@ public class SimpleMovieService implements MovieService {
     public void setMovieRepository(MovieRepository movieRepository) {
         this.movieRepository = movieRepository;
     }
+
+    @Override
+    public Movie findById(Long id) {
+        return movieRepository.find(id);
+    }
 }
 
 

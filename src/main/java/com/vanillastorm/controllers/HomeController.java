@@ -11,7 +11,7 @@ public class HomeController {
     //по запросу / и с методом GET попадает в метод home
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String home(Model model) {
-        model.addAttribute("greetingMessage", "Hello, greeting message");
+        model.addAttribute("greetingMessage", "Welcome to whattowhatch");
         return "home";
     }
 }

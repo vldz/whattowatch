@@ -13,7 +13,7 @@
     <title>Home page</title>
 </head>
 <body>
-    <h1>hello from home page to me</h1>
+    <h3>home.jsp</h3>
     <h2>${greetingMessage}</h2>
 
 

@@ -9,8 +9,8 @@
     <list default="true" id="72e29b48-4315-48ca-940f-678c6e84498a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vanillastorm/controllers/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vanillastorm/controllers/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vanillastorm/entity/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vanillastorm/entity/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movie.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vanillastorm/util/spring/ContextProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/whattowatch-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/whattowatch-1.0-SNAPSHOT.war" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,9 +24,9 @@
     <session id="1678719787">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="25" />
+          <entry key="project.closed" value="26" />
           <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.10" value="4" />
+          <entry key="project.open.time.10" value="5" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="3" />
@@ -42,16 +42,17 @@
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="26" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="7" />
           <entry key="html" value="6" />
-          <entry key="java" value="85" />
-          <entry key="jsp" value="12" />
+          <entry key="java" value="87" />
+          <entry key="jsp" value="13" />
           <entry key="rtf" value="2" />
           <entry key="xml" value="20" />
           <entry key="xsd" value="1" />
@@ -61,8 +62,8 @@
         <counts>
           <entry key="CLASS" value="7" />
           <entry key="HTML" value="6" />
-          <entry key="JAVA" value="85" />
-          <entry key="JSP" value="12" />
+          <entry key="JAVA" value="87" />
+          <entry key="JSP" value="13" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="21" />
         </counts>
@@ -71,9 +72,9 @@
         <counts>
           <entry key="class" value="13" />
           <entry key="html" value="36" />
-          <entry key="java" value="3405" />
-          <entry key="jsp" value="694" />
-          <entry key="txt" value="198" />
+          <entry key="java" value="3446" />
+          <entry key="jsp" value="711" />
+          <entry key="txt" value="244" />
           <entry key="xml" value="1109" />
         </counts>
       </usages-collector>
@@ -81,16 +82,43 @@
         <counts>
           <entry key="CLASS" value="13" />
           <entry key="HTML" value="36" />
-          <entry key="JAVA" value="3405" />
-          <entry key="JSP" value="694" />
-          <entry key="PLAIN_TEXT" value="198" />
+          <entry key="JAVA" value="3446" />
+          <entry key="JSP" value="711" />
+          <entry key="PLAIN_TEXT" value="244" />
           <entry key="XML" value="1109" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.create.new" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vanillastorm/controllers/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -108,6 +136,11 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -132,9 +165,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/vanillastorm/repository/InMemMovieRepository.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vanillastorm/controllers/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/vanillastorm/web/GeneralRequestDispatcherServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/webContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/vanillastorm/service/MovieService.java" />
@@ -142,6 +173,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/vanillastorm/entity/Movie.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movie.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/vanillastorm/controllers/MovieController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vanillastorm/controllers/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp" />
       </list>
     </option>
   </component>
@@ -192,7 +225,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,16 +301,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vanillastorm" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="whattowatch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="whattowatch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vanillastorm" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -317,12 +339,13 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545081030372" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545082164521" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -494,6 +517,8 @@
       <workItem from="1544643351212" duration="3822000" />
       <workItem from="1544647265033" duration="187000" />
       <workItem from="1545079638404" duration="1384000" />
+      <workItem from="1545081446829" duration="49000" />
+      <workItem from="1545081595975" duration="518000" />
     </task>
     <task id="LOCAL-00001" summary="added few more controllers on one GeneralServlet">
       <created>1544470526609</created>
@@ -516,16 +541,31 @@
       <option name="project" value="LOCAL" />
       <updated>1544647471724</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="forms, POST method">
+      <created>1545081487137</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1545081487138</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added greeting msg to home page. closes #1">
+      <created>1545081858026</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1545081858026</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43260000" />
+    <option name="totallyTimeSpent" value="43827000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6012048" visible="true" weight="0.26752505" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6012048" visible="true" weight="0.2746781" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -543,7 +583,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.30361447" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.36144578" />
+      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.38915664" />
       <window_info anchor="bottom" id="Application Servers" order="11" weight="0.17951807" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
@@ -595,7 +635,9 @@
     <MESSAGE value="added few more controllers on one GeneralServlet" />
     <MESSAGE value="POST, GET, saves new movie" />
     <MESSAGE value="beginning of Spring MVC, -customServlet, +RequestMapping.&#10;webContext&#10;jsp to normal view" />
-    <option name="LAST_COMMIT_MESSAGE" value="beginning of Spring MVC, -customServlet, +RequestMapping.&#10;webContext&#10;jsp to normal view" />
+    <MESSAGE value="forms, POST method" />
+    <MESSAGE value="added greeting msg to home page. closes #1" />
+    <option name="LAST_COMMIT_MESSAGE" value="added greeting msg to home page. closes #1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.2.4.RELEASE/spring-context-4.2.4.RELEASE.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.class">
@@ -748,13 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vanillastorm/util/spring/ContextProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="573">
@@ -773,13 +808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1164">
           <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -889,11 +917,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vanillastorm/controllers/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="60" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="60" />
+        <state relative-caret-position="195">
+          <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vanillastorm/util/spring/ContextProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="11" />
         </state>
       </provider>
     </entry>

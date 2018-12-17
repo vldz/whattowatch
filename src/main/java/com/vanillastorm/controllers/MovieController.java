@@ -2,7 +2,6 @@ package com.vanillastorm.controllers;
 
 import com.vanillastorm.entity.Movie;
 import com.vanillastorm.service.MovieService;
-import com.vanillastorm.util.spring.ContextProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -7,6 +7,10 @@ public class Movie extends Object{
     private long id;
     private String name;
 
+    public Movie() {
+
+    }
+
     public Movie(long id, String name) {
         this.id = id;
         this.name = name;

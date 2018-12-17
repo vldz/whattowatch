@@ -6,10 +6,7 @@ import com.vanillastorm.util.spring.ContextProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class MovieController {
@@ -20,7 +17,14 @@ public class MovieController {
     @RequestMapping(value = "/movie", method = RequestMethod.GET)
     public String movie(Model model) {
         model.addAttribute("movies", movieService.findAll());
+        model.addAttribute("movie", new Movie());
         return "movie";
+    }
+
+    @RequestMapping(value = "/movie", method = RequestMethod.POST)
+    public String createMovie(@ModelAttribute Movie movie, Model model) {
+        movieService.save(movie);
+        return "redirect:/app/movie";
     }
 
     @RequestMapping(value = "/movie/{id}", method = RequestMethod.GET)
